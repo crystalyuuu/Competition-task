@@ -1,5 +1,4 @@
-﻿//using AutoItX3Lib;
-using MarsFramework.Config;
+﻿using MarsFramework.Config;
 using MarsFramework.Global;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;

@@ -95,7 +95,6 @@ namespace MarsFramework.Pages
             Thread.Sleep(2000);
             string expectedTitle = GlobalDefinitions.ExcelLib.ReadData(2, "Title");
             return expectedTitle;
-
         }
 
 
