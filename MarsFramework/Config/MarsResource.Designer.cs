@@ -79,7 +79,7 @@ namespace MarsFramework.Config {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C:\Users\Crystal\Competition-task\Competition-task\MarsFramework\WorkSample\SampleUpload.txt.
+        ///   Looks up a localized string similar to C:\Users\Crystal\Competition-task\Competition-task\MarsFramework\WorkSample\images.jpg.
         /// </summary>
         internal static string Filepath {
             get {

@@ -1,4 +1,5 @@
-﻿using MarsFramework.Config;
+﻿using AutoItX3Lib;
+using MarsFramework.Config;
 using MarsFramework.Global;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
@@ -187,7 +188,16 @@ namespace MarsFramework.Pages
             //WorkSample Upload
             WorkSample.Click();
 
-            Thread.Sleep(000);
+            // AutoIt
+            AutoItX3 autoIt = new AutoItX3();
+            autoIt.WinActivate("Open");
+            Thread.Sleep(1000);
+            autoIt.Send(Base.Filepath);
+            Thread.Sleep(2000);
+            autoIt.Send("{ENTER}");
+
+
+            Thread.Sleep(2000);
             //ActiveOption.SendKeys(GlobalDefinitions.ExcelLib.ReadData(2, "Active"));
             Save.Click();
 
@@ -277,6 +287,14 @@ namespace MarsFramework.Pages
 
             //WorkSample Upload
             WorkSample.Click();
+
+            // AutoIt
+            AutoItX3 autoIt = new AutoItX3();
+            autoIt.WinActivate("Open");
+            Thread.Sleep(1000);
+            autoIt.Send(Base.Filepath);
+            Thread.Sleep(2000);
+            autoIt.Send("{ENTER}");
 
             //ActiveOption.SendKeys(GlobalDefinitions.ExcelLib.ReadData(2, "Active"));
 
